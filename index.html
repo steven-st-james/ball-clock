@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <title>The Ball Clock App</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body ng-app="BallClock">
+   <div ng-controller="clockController">
+
+        <h3>Type in number of balls:</h3>
+        <input type="number" ng-model="ballNumber" /><br >
+        <button ng-click="numInCue(ballNumber)">Submit</button><br>
+        <h3>Number of Days: {{days}}</h3>
+
+
+
+   </div>
+
+  <script src="angular.js" ></script>
+  <script src="app.js" ></script>
+</body>
+</html>
